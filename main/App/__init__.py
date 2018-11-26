@@ -8,4 +8,5 @@ def create_app(configName):
     app.config.from_object(configDict[configName]) #配置文件的加载
     ext_init(app)
     register_blueprint(app)
+
     return app
